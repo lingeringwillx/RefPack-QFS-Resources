@@ -12,7 +12,7 @@ The name QFS comes from a file format used in old Need for Speed games in which 
 
 [Niotso Wiki](http://wiki.niotso.org/RefPack): Generic information on the compression algorithm.
 
-[Source Code](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC): Official source code released by EA as a part of the public release of the source code of Command and Conquers: Generals - Zero Hour.
+[Source Code](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC): Official code released by EA as a part of the public release of the source code of Command and Conquer: Generals - Zero Hour.
 
 [Explanation of LZ77/LZSS Compression](https://go-compression.github.io/algorithms/lzss/): RefPack is based on the LZ77 compression algorithm.
 
@@ -31,6 +31,7 @@ List of known implementations of the compression algorithm organized by language
 | Java | [emd4600](https://github.com/emd4600/SporeModder-FX/blob/master/src/sporemodder/file/dbpf/RefPackCompression.java) | [java_dwarf](https://github.com/memo33/jDBPFX/blob/master/src/jdbpfx/util/DBPFPackager.java) ||
 | JavaScript | [sebamarynissen](https://github.com/sebamarynissen/qfs-compression) |||
 | Kotlin ||| [DarkAtra](https://github.com/DarkAtra/bfme2-modding-utils/blob/main/refpack/src/main/kotlin/de/darkatra/bfme2/refpack/RefPackInputStream.kt)[^3] |
+| Pascal ||| [Banshee](https://github.com/forcecore/ZHModLauncher/blob/6d0db2847ed08c6b81229e61103bf7ac8990ce40/src/BIG_File.pas)[^3] |
 | PHP || [Delphy](https://modthesims.info/wiki.php?title=DBPF_Compression#Example_Code)[^3] ||
 | Python || [lingeringwillx](https://github.com/lingeringwillx/sims2lib/blob/main/dbpf.py)[^4]<br>[lah7](https://github.com/lah7/sims2-4k-ui-patch/blob/master/sims2patcher/qfs.py) ||
 | Rust || [actioninja](https://github.com/actioninja/refpack-rs) | [actioninja](https://github.com/actioninja/refpack-rs) |
