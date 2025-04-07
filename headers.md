@@ -66,7 +66,7 @@ Unknown format
 
 - If flag `0b01000000` is set, then the maximum offset is limited to a specific value, exceeding this value might cause the game to crash[^unkflag]. This flag is typically ignored in modder made implementations of the algorithm as it doesn't affect decompression, and when compressing a file it's just left unset. This flag is primarily seen in Spore. 
 
-- Wing Commander games on the [3DO](https://en.wikipedia.org/wiki/3DO) used refpack with an unknown header[^wc][^leakedcode].
+- Wing Commander games on the [3DO](https://en.wikipedia.org/wiki/3DO) use refpack with an unknown header[^wc][^leakedcode].
 
 [^lego]: [ZenHAX](https://zenhax.com/viewtopic.php@t=380.html)
 
