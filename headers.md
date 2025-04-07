@@ -46,9 +46,9 @@ In the early to mid 2000's, Maxis deviated from the standard by adding the compr
 3 bytes int uncompressed size (big endian)
 ```
 
-#### LEGO
+#### Lego
 
-Refpack is also used in TT Fusion's LEGO games on the PSP and DS consoles. It's unclear how the algorithm made it from EA to TT Games.
+Refpack is also used in TT Fusion's Lego games on the PSP and DS consoles[^lego]. It's unclear how the algorithm made it from EA to TT Games.
 
 ```
 Unknown format
@@ -58,24 +58,26 @@ Unknown format
 
 - 0xFB likely stands for Frank Barchard, the developer of the algorithm.
 
-- According to EA's source code, support for the `0b10000000` flag was added in 2001[^1]. Older titles are limited to 3 bytes for the uncompressed size in the header, which means that the maximum size of the resources that they can compress is 16 MB.
+- According to EA's source code, support for the `0b10000000` flag was added in 2001[^refabout]. Older titles are limited to 3 bytes for the uncompressed size in the header, which means that the maximum size of the resources that they can compress is 16 MB.
 
 - The uncompressed size is stored in big endian even in games that natively use little endian.
 
-- I have not seen the `0b00000001` flag in any game files. It's likely never or rarely used. EA's source code shows that the decompressor supports this flag[^2]. However, the compressor doesn't produce any assets with the flag[^3].
+- I have not seen the `0b00000001` flag in any game files. It's likely never or rarely used. EA's source code shows that the decompressor supports this flag[^refdecode]. However, the compressor doesn't produce any assets with the flag[^refencode].
 
-- If flag `0b01000000` is set, then the maximum offset is limited to a specific value, exceeding this value might cause the game to crash[^4]. This flag is typically ignored in modder made implementations of the algorithm as it doesn't affect decompression, and when compressing a file it's just left unset.
+- If flag `0b01000000` is set, then the maximum offset is limited to a specific value, exceeding this value might cause the game to crash[^unkflag]. This flag is typically ignored in modder made implementations of the algorithm as it doesn't affect decompression, and when compressing a file it's just left unset. This flag is primarily seen in Spore. 
 
-- Wing Commander games on the [3DO](https://en.wikipedia.org/wiki/3DO) used refpack with an unknown header[^5][^6].
+- Wing Commander games on the [3DO](https://en.wikipedia.org/wiki/3DO) used refpack with an unknown header[^wc][^leakedcode].
 
-[^1]: [C&C Generals source code: refabout.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refabout.cpp)
+[^lego]: [ZenHAX](https://zenhax.com/viewtopic.php@t=380.html)
 
-[^2]: [C&C Generals source code: refdecode.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refdecode.cpp)
+[^refabout]: [C&C Generals source code: refabout.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refabout.cpp)
 
-[^3]: [C&C Generals source code: refencode.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refencode.cpp)
+[^refdecode]: [C&C Generals source code: refdecode.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refdecode.cpp)
 
-[^4]: [SimsWiki](https://simswiki.info/wiki.php?title=Sims_3:DBPF/Compression)
+[^refencode]: [C&C Generals source code: refencode.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refencode.cpp)
 
-[^5]: [Discussion in the Wind Commander CIC forums](https://www.wcnews.com/chatzone/threads/wc3-3do-codec-compression-decoding-and-comparison-discussion.30492)
+[^unkflag]: [SimsWiki](https://simswiki.info/wiki.php?title=Sims_3:DBPF/Compression)
 
-[^6]: [The source code](http://download.wcnews.com/files/documents/sourcecode/shadowforce/transfer/asommers/mfcapp_src/engine/compress/RefPack.cpp) leaked by Wing Commander CIC shows that the header is just the uncompressed size stored in a 32-bit integer
+[^wc]: [Discussion in the Wind Commander CIC forums](https://www.wcnews.com/chatzone/threads/wc3-3do-codec-compression-decoding-and-comparison-discussion.30492)
+
+[^leakedcode]: [The source code](http://download.wcnews.com/files/documents/sourcecode/shadowforce/transfer/asommers/mfcapp_src/engine/compress/RefPack.cpp) leaked by Wing Commander CIC shows that the header is just the uncompressed size stored in a 32-bit integer
