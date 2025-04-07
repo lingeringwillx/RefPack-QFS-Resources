@@ -46,6 +46,14 @@ In the early to mid 2000's, Maxis deviated from the standard by adding the compr
 3 bytes int uncompressed size (big endian)
 ```
 
+#### LEGO
+
+Refpack is also used in TT Fusion's LEGO games on the PSP and DS consoles. It's unclear how the algorithm made it from EA to TT Games.
+
+```
+Unknown format
+```
+
 #### Notes
 
 - 0xFB likely stands for Frank Barchard, the developer of the algorithm.
@@ -58,6 +66,8 @@ In the early to mid 2000's, Maxis deviated from the standard by adding the compr
 
 - If flag `0b01000000` is set, then the maximum offset is limited to a specific value, exceeding this value might cause the game to crash[^4]. This flag is typically ignored in modder made implementations of the algorithm as it doesn't affect decompression, and when compressing a file it's just left unset.
 
+- Wing Commander games on the [3DO](https://en.wikipedia.org/wiki/3DO) used refpack with an unknown header[^5][^6].
+
 [^1]: [C&C Generals source code: refabout.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refabout.cpp)
 
 [^2]: [C&C Generals source code: refdecode.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refdecode.cpp)
@@ -65,3 +75,7 @@ In the early to mid 2000's, Maxis deviated from the standard by adding the compr
 [^3]: [C&C Generals source code: refencode.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refencode.cpp)
 
 [^4]: [SimsWiki](https://simswiki.info/wiki.php?title=Sims_3:DBPF/Compression)
+
+[^5]: [Discussion in the Wind Commander CIC forums](https://www.wcnews.com/chatzone/threads/wc3-3do-codec-compression-decoding-and-comparison-discussion.30492)
+
+[^6]: [The source code](http://download.wcnews.com/files/documents/sourcecode/shadowforce/transfer/asommers/mfcapp_src/engine/compress/RefPack.cpp) leaked by Wing Commander CIC shows that the header is just the uncompressed size stored in a 32-bit integer
