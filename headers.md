@@ -48,7 +48,7 @@ In the early to mid 2000's, Maxis deviated from the standard by adding the compr
 
 #### Lego
 
-Refpack is also used in TT Fusion's Lego games on the PSP and DS consoles[^lego]. It likely obtained the algorithm through its predecessor Warthog Games, which made some games published by EA.
+Refpack is also used in TT Fusion's Lego games on the PSP and DS consoles[^lego]. It likely obtained the algorithm through its predecessor, Warthog Games, which made some games published by EA.
 
 ```
 Unknown format
