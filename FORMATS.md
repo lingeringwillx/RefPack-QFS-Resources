@@ -1,19 +1,21 @@
+### Formats
+
 Refpack was originally developed by EA Canada, but received some updates over time that changed slightly. It was also passed to the various studios that worked with or published games under EA, where they it was modified to work as they like. Most of the times they just changed the header, but in some cases they changed the method of encoding and decoding as well.
 
-#### EAC (EA Canada)
+#### EAC
 
 The header for EA Canada has the following format:
 
 ```
 1 byte flags:
 
-bit 0b10000000: 4 bytes are used for the decompressed size if enabled, 3 bytes are used if disabled
+  bit 0b10000000: 4 bytes are used for the decompressed size if enabled, 3 bytes are used if disabled
 
-bit 0b01000000: Unknown
+  bit 0b01000000: unknown
 
-bit 0b00010000: Always set
+  bit 0b00010000: Always set
 
-bit 0b00000001: compressed size added to header
+  bit 0b00000001: compressed size added to header
 
 1 byte magic: 0xFB
 
@@ -50,7 +52,7 @@ In the early to mid 2000's, Maxis deviated from the standard EAC header by addin
 
 Refpack is also used in TT Fusion's games on the PSP and DS consoles[^lego]. They likely obtained the algorithm through its predecessor, Warthog Games, which developed some games that are published by EA[^warthog].
 
-Files can be compressed in multiple chunks. With the chunk size mentioned in the header.
+Files can be compressed in multiple chunks, with the size of each chunk mentioned in the header.
 
 ##### Standard
 
@@ -75,9 +77,9 @@ Also uses the modified refpack encoding, but has a different header.
 
 5 bits flags:
 
-3 bits unknown
+  3 bits unknown
 
-2 bits compression method: 01 for refpack
+  2 bits compression method: 01 for refpack
 ```
 
 #### Notes
