@@ -19,9 +19,9 @@ The header for EA Canada has the following format:
 
 1 byte magic: 0xFB
 
-if flags 0b10000000 and 0b00000001 set: 4 bytes int compressed size (big endian)
+if flags 0b10000000 and 0b00000001 set: 4 bytes compressed size (big endian)
 
-else if flag 0b00000001 set: 3 bytes int compressed size (big endian)
+else if flag 0b00000001 set: 3 bytes compressed size (big endian)
 
 if flag 0b10000000 set: 4 bytes uncompressed size (big endian)
 
@@ -41,11 +41,11 @@ For old 90's titles, alternative algorithms could be used in place of RefPack de
 In the early to mid 2000's, Maxis deviated from the standard EAC header by adding the compressed size before the flags and magic character. Later Maxis games use the regular header.
 
 ```
-4 bytes int compressed size (little endian)
+4 bytes compressed size (little endian)
 
-2 bytes int magic header (0x10FB)
+2 bytes magic header: 0x10FB
 
-3 bytes int uncompressed size (big endian)
+3 bytes uncompressed size (big endian)
 ```
 
 #### Fusion
@@ -73,7 +73,7 @@ This has the same header as the standard version, but the byte encoding is diffe
 Also uses the modified refpack encoding, but has a different header.
 
 ```
-27 bits chunk size
+27 bits chunk size (big endian)
 
 5 bits flags:
 
