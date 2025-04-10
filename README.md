@@ -20,7 +20,7 @@ The name QFS comes from a file format used in old Need for Speed games in which 
 
 #### Implementations
 
-List of known implementations of the compression algorithm organized by [format](https://github.com/lingeringwillx/RefPack-QFS-Resources/blob/main/FORMATS.md) and language and for easy reference. A lot of those are rewrites of the same code in another programming language. The quality varies from one implementation to another.
+List of known implementations of the compression algorithm organized by language and [format](https://github.com/lingeringwillx/RefPack-QFS-Resources/blob/main/FORMATS.md) and for easy reference. A lot of those are rewrites of the same code in another programming language. The quality varies from one implementation to another.
 
 | Language/Format | EAC | EAC (w/ 32-bit size) | Maxis | Fusion |
 |-|:-:|:-:|:-:|:-:|
