@@ -11,7 +11,7 @@ The header for EA Canada has the following format:
 
   bit 0b10000000: 4 bytes are used for the decompressed size if enabled, 3 bytes are used if disabled
 
-  bit 0b01000000: unknown
+  bit 0b01000000: unknown, used in Spore
 
   bit 0b00010000: Always set
 
