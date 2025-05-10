@@ -1,6 +1,6 @@
 ### Formats
 
-Refpack was originally developed by EA Canada, but received some updates over time that changed slightly. It was also passed to the various studios that worked with or published games under EA, where they it was modified to work as they like. Most of the times they just changed the header, but in some cases they changed the method of encoding and decoding as well.
+Refpack was originally developed by EA Canada, and it received some updates over time that changed it slightly. It was also passed to the various studios that worked with or published games under EA, who modified it to work as they like. Most of the times they just changed the header, but in some cases they changed the method of encoding and decoding as well.
 
 #### EAC
 
