@@ -94,7 +94,7 @@ Also uses the modified refpack encoding, but has a different header.
 
 [^lego]: [ZenHAX](https://zenhax.com/viewtopic.php@t=380.html)
 
-[^warthog]: [Wikipedia](https://en.wikipedia.org/wiki/Warthog)
+[^warthog]: [Wikipedia](https://en.wikipedia.org/wiki/Warthog_Games#List_of_games)
 
 [^refabout]: [C&C Generals source code: refabout.cpp](https://github.com/electronicarts/CnC_Generals_Zero_Hour/blob/main/Generals/Code/Libraries/Source/Compression/EAC/refabout.cpp)
 
