@@ -33,7 +33,7 @@ List of known implementations of the compression algorithm organized by language
 | Kotlin || [DarkAtra](https://github.com/DarkAtra/bfme2-modding-utils/blob/main/refpack/src/main/kotlin/de/darkatra/bfme2/refpack/RefPackInputStream.kt)[^decompression] |||
 | Pascal || [Banshee](https://github.com/forcecore/ZHModLauncher/blob/6d0db2847ed08c6b81229e61103bf7ac8990ce40/src/BIG_File.pas)[^decompression] |||
 | PHP ||| [Delphy](https://modthesims.info/wiki.php?title=DBPF_Compression#Example_Code)[^decompression] ||
-| Python ||| [lingeringwillx](https://github.com/lingeringwillx/sims2lib/blob/main/dbpf.py)[^bindings]<br>[lah7](https://github.com/lah7/sims2-4k-ui-patch/blob/master/sims2patcher/qfs.py) | [yukinogatari](https://github.com/yukinogatari/Reverse-Engineering/blob/master/Lego/fib_dec.py)[^decompression] |
+| Python | [ClementJ18](https://github.com/ClementJ18/pyBIG/blob/master/pyBIG/refpack.py) || [lingeringwillx](https://github.com/lingeringwillx/sims2lib/blob/main/dbpf.py)[^bindings]<br>[lah7](https://github.com/lah7/sims2-4k-ui-patch/blob/master/sims2patcher/qfs.py) | [yukinogatari](https://github.com/yukinogatari/Reverse-Engineering/blob/master/Lego/fib_dec.py)[^decompression] |
 | Rust || [actioninja](https://github.com/actioninja/refpack-rs) | [actioninja](https://github.com/actioninja/refpack-rs) ||
 | Scala ||| [memo33](https://github.com/memo33/scdbpf/blob/master/src/main/scala/scdbpf/internal/QfsCompression.scala) ||
 
