@@ -31,7 +31,7 @@ List of known implementations of the compression algorithm organized by language
 | Java | [emd4600](https://github.com/emd4600/SporeModder-FX/blob/master/src/sporemodder/file/dbpf/RefPackCompression.java) | [NI240SX](https://github.com/NI240SX/UCGT/tree/master/src/fr/ni240sx/ucgt/compression) | [java_dwarf](https://github.com/memo33/jDBPFX/blob/master/src/jdbpfx/util/DBPFPackager.java) ||
 | JavaScript | [sebamarynissen](https://github.com/sebamarynissen/qfs-compression) ||||
 | Kotlin || [DarkAtra](https://github.com/DarkAtra/bfme2-modding-utils/blob/main/refpack/src/main/kotlin/de/darkatra/bfme2/refpack) |||
-| Pascal || [Banshee](https://github.com/forcecore/ZHModLauncher/blob/master/src/BIG_File.pas)[^decompression] |||
+| Pascal | [thiekus](https://github.com/thiekus/sc3k-sprite-extract/blob/main/refpack.pas)[^decompression] | [Banshee](https://github.com/forcecore/ZHModLauncher/blob/master/src/BIG_File.pas)[^decompression]<br>[thiekus](https://github.com/thiekus/sc3k-sprite-extract/blob/main/refpack.pas)[^decompression] | [thiekus](https://github.com/thiekus/sc3k-sprite-extract/blob/main/refpack.pas)[^decompression] ||
 | PHP ||| [Delphy](https://modthesims.info/wiki.php?title=DBPF_Compression#Example_Code)[^decompression] ||
 | Python | [ClementJ18](https://github.com/ClementJ18/pyBIG/blob/master/pyBIG/refpack.py) || [lingeringwillx](https://github.com/lingeringwillx/pysims2/blob/main/dbpf.py)[^bindings]<br>[lah7](https://github.com/lah7/sims2-4k-ui-patch/blob/master/sims2patcher/qfs.py) | [yukinogatari](https://github.com/yukinogatari/Reverse-Engineering/blob/master/Lego/fib_dec.py)[^decompression] |
 | Rust || [actioninja](https://github.com/actioninja/refpack-rs) | [actioninja](https://github.com/actioninja/refpack-rs) ||
